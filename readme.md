@@ -26,13 +26,11 @@
 
 ### 5. Device Tree (DT)
 
-(5.1) Done; new alias defined in blinky\boards\nrf7002dk_nrf5340_cpuapp_ns.overlay, used in blinky\src\main.c.
+(5.1) Done; new alias defined in blinky\boards\nrf7002dk_nrf5340_cpuapp_ns.overlay, used in blinky\src\main.c. 
 
-(5.2) Poll for a button press and switch the LED state.
-Commit these application changes to your GitHub repository.
+(5.2) Done; button is polled every 50ms in the main loop in blinky_revised\src\main.c, toggles the led5180 on each new button press.
 
-(5.3) Create a new alias for your button and call your alias within your main.c.
-Commit these application changes to your GitHub repository.
+(5.3) Done; new button alias button5180 defined in blinky_revised\boards\nrf7002dk_nrf5340_cpuapp_ns.overlay and blinky_revised\boards\nrf7002dk_nrf5340_cpuapp.overlay, used in blinky_revised\src\main.c.
 
 ### 6. Printing vs. Logging
 
