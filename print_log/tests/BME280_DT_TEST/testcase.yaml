@@ -1,0 +1,6 @@
+tests:
+  bme280.dt_sanity:
+    platform_allow:
+      - nrf7002dk/nrf5340/cpuapp/ns
+    tags: bme280 dt unit
+    harness: ztest

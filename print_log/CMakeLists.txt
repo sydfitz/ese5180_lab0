@@ -12,3 +12,8 @@ elseif(CONFIG_SUM_LOG)
   target_sources(app PRIVATE sum_log/sum_log.c)
   target_include_directories(app PRIVATE sum_log)
 endif()
+
+if(CONFIG_TEMP_READ)
+  target_sources(app PRIVATE bme280_temp/bme280_temp.c)
+  target_include_directories(app PRIVATE bme280_temp)
+endif()

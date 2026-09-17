@@ -1,3 +1,6 @@
 build*/
 twister-out*/
 build_info.yml*
+
+# stray short-path build output (Windows path-length workaround)
+/c/
