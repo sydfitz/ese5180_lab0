@@ -1,0 +1,2 @@
+# Needed so Zephyr's own options (CONFIG_ZTEST, CONFIG_LOG, etc.) are visible to this test's prj.conf
+source "Kconfig.zephyr"
