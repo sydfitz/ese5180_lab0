@@ -9,7 +9,7 @@
   "optimizations": "none",
   "cmakeArgs": [],
   "confFiles": [],
-  "buildDirectory": "",
+  "buildDirectory": "build",
   "kconfigFragments": [],
   "snippets": [],
   "dtcOverlays": [],
