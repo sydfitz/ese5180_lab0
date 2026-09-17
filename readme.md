@@ -40,7 +40,7 @@
 CONFIG_SUM_LOG = y:
 ![image1](images/sumlog.png)
 
-(6.2) TODO: Make a short video showing hexdump, log, and printk. Name the video file: f26_lab0_6.2_pennkey
+(6.2) Done; video upload to google form
 
 (6.3) Done; the updated code for this part is in a new application folder named /print_log.
 
@@ -54,9 +54,9 @@ CONFIG_SUM_LOG = y:
 
 ### 8. Adding a Peripheral (BME280)
 
-(8.1) Done; temp printing code is under print_log/bme280_temp/. CONFIG_TEMP_READ is a separate Kconfig option from the CONFIG_SUM_PRINT / CONFIG_SUM_LOG choice, so temperature printing can be enabled independently of which sum implementation is selected.
+(8.1) Done; temp printing code is under print_log/bme280_temp/. CONFIG_TEMP_READ is a separate Kconfig option from the CONFIG_SUM_PRINT / CONFIG_SUM_LOG choice.
 ![image1](images/temp_output.png)
 
-(8.2) Done; Ztest code is under print_log/tests/BME280_DT_TEST, testing that the BME280 devicetree node/I2C bus are set up correctly and sanity-checking the temperature compensation math with known calibration values (no physical sensor required). I had the same file path length issue, so I built to a shorter output location than the default.
+(8.2) Done; Ztest code is under print_log/tests/BME280_DT_TEST, testing that the BME280 devicetree node/I2C bus are set up correctly and sanity-checking sensor. I had the same file path length issue, so I built to a shorter output location than the default.
 ![image1](images/bme_ztest1.png)
 ![image1](images/bme_ztest2.png)
