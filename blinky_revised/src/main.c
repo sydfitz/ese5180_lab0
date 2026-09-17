@@ -34,12 +34,10 @@ int main(void)
 	if (!gpio_is_ready_dt(&led) || !gpio_is_ready_dt(&button)) {
 		return 0;
 	}
-
 	ret = gpio_pin_configure_dt(&led, GPIO_OUTPUT_INACTIVE);
 	if (ret < 0) {
 		return 0;
 	}
-
 	ret = gpio_pin_configure_dt(&button, GPIO_INPUT);
 	if (ret < 0) {
 		return 0;

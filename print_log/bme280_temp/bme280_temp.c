@@ -22,7 +22,7 @@ int32_t bme280_compensate_temperature(int32_t adc_T, uint16_t dig_T1,
 void bme280_print_temperature(void)
 {
 	uint8_t calib[6];
-	uint8_t ctrl_meas = 0x27; /* osrs_t=001, osrs_p=001, mode=11 (normal) */
+	uint8_t ctrl_meas = 0x27;
 	uint8_t temp_raw[3];
 	uint16_t dig_T1;
 	int16_t dig_T2, dig_T3;
