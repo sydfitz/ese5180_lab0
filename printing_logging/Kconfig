@@ -1,0 +1,15 @@
+# Needed to include Zephyr's CONFIG_LOG, CONFIG_UART_CONSOLE, etc. for prj.conf
+source "Kconfig.zephyr"
+
+choice SUM_IMPL
+	prompt "Sum implementation"
+	default SUM_PRINT
+
+config SUM_PRINT
+	bool "Print sum() result with printk()"
+
+config SUM_LOG
+	bool "Print sum() result with the logger"
+	select LOG
+
+endchoice

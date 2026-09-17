@@ -34,17 +34,15 @@
 
 ### 6. Printing vs. Logging
 
-(6.1) Take screenshots of console output for both builds:
+(6.1) CONFIG_SUM_PRINT = y:
+![image1](images/sumprintk.png)
 
-CONFIG_SUM_PRINT=y → result printed with printk().
-CONFIG_SUM_LOG=y → result printed with the Logger (include hexdump).
+CONFIG_SUM_LOG = y:
+![image1](images/sumlog.png)
 
-(6.2) Make a short video showing hexdump, log, and printk.
+(6.2) TODO: Make a short video showing hexdump, log, and printk. Name the video file: f26_lab0_6.2_pennkey
 
-Name the video file: f26_lab0_6.2_pennkey
-Submit the video to this Google Form.
-
-(6.3) Commit your updated Zephyr application to your GitHub repository
+(6.3) Done; the updated code for this part is in a new application folder named /printing_logging.
 
 ### 7. Ztest for Unit Testing
 
