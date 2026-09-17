@@ -4,7 +4,9 @@
 #include "sum_printk.h"
 #elif defined(CONFIG_SUM_LOG)
 #include "sum_log.h"
-#elif defined(CONFIG_TEMP_READ)
+#endif
+
+#ifdef CONFIG_TEMP_READ
 #include <zephyr/drivers/i2c.h>
 #endif
 
@@ -68,7 +70,9 @@ int main(void)
 	sum_printk(3, 5);
 #elif defined(CONFIG_SUM_LOG)
 	sum_log(3, 5);
-#elif defined(CONFIG_TEMP_READ)
+#endif
+
+#ifdef CONFIG_TEMP_READ
 	bme280_print_temperature();
 #endif
 

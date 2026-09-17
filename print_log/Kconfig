@@ -2,7 +2,7 @@
 source "Kconfig.zephyr"
 
 choice SUM_IMPL
-	prompt "Application demo to build"
+	prompt "Method to print sum() result"
 	default SUM_PRINT
 
 config SUM_PRINT
@@ -12,10 +12,10 @@ config SUM_LOG
 	bool "Print sum() result with the logger"
 	select LOG
 
+endchoice
+
 config TEMP_READ
 	bool "Read and print BME280 temperature over I2C"
 	select SENSOR
 	select I2C
 	select CBPRINTF_FP_SUPPORT
-
-endchoice
